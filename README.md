@@ -110,7 +110,6 @@ El servidor se ejecutó con Uvicorn en modo recarga automática:
 uvicorn app.main:app --reload
 ```
 
-<img width="1472" height="472" alt="Captura de pantalla 2026-10-08 130652" src="https://github.com/user-attachments/assets/ec844a5b-8d96-4455-b17a-3ac136470445" />
 
 
 ---
@@ -119,4 +118,6 @@ uvicorn app.main:app --reload
 
 FastAPI genera la documentación de forma automática. Se accede desde `http://127.0.0.1:8000/docs`, donde se listan los tres endpoints creados.
 
-![Swagger UI de TaskFlow API con los endpoints /health, /version y /ping](images/03-swagger.png)
+<img width="1472" height="472" alt="Captura de pantalla 2026-10-08 130652" src="https://github.com/user-attachments/assets/ec844a5b-8d96-4455-b17a-3ac136470445" />
+
+

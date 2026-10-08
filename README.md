@@ -97,7 +97,8 @@ taskflow-api/
 
 Se implementaron tres endpoints básicos de tipo `GET`: `/health`, `/version` y `/ping`.
 
-![Código de los endpoints /health, /version y /ping](images/01-endpoints.png)
+<img width="277" height="235" alt="Captura de pantalla 2026-10-08 130507" src="https://github.com/user-attachments/assets/24c18768-de93-4d99-a71b-1e78b49ef17a" />
+
 
 ---
 
@@ -109,7 +110,8 @@ El servidor se ejecutó con Uvicorn en modo recarga automática:
 uvicorn app.main:app --reload
 ```
 
-![Servidor Uvicorn en ejecución en http://127.0.0.1:8000](images/02-uvicorn.png)
+<img width="1472" height="472" alt="Captura de pantalla 2026-10-08 130652" src="https://github.com/user-attachments/assets/ec844a5b-8d96-4455-b17a-3ac136470445" />
+
 
 ---
 

@@ -227,4 +227,11 @@ La captura muestra las dos respuestas del endpoint:
 | Código | Significado | Contenido |
 |--------|-------------|-----------|
 | 201 | Tarea creada (simulada) | `title`, `description`, `project_id`, `id`, `completed`, `created_at` |
-| 422
+| 422 | Error de validación | `detail[]` con `loc`, `msg`, `type`, `input` y `ctx` |
+
+Pruebas realizadas desde `http://127.0.0.1:8000/docs` con **Try it out → Execute**:
+
+* Caso válido: `{"title": "Estudiar Pydantic", "project_id": 1}` devuelve 201 con la tarea simulada.
+* Caso inválido: `{"title": "", "project_id": 1}` devuelve 422, porque `title` incumple `Field(min_length=1, max_length=100)`. El campo erróneo aparece en `loc` y el motivo en `msg`.
+
+En la sección **Schemas**, al final de `/docs`, se pueden consultar `TaskCreate`, `TaskRead`, `ProjectCreate` y `ProjectRead`, que definen el contrato de entrada/salida de la API.
